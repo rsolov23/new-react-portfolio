@@ -7,8 +7,7 @@ import social from "../images/socialapi.png";
 import readme from "../images/readme.png";
 import work from "../images/work.png";
 
-
-export const projectInfo = [
+const projectInfo = [
   {
     projectInfo: "",
 
@@ -94,3 +93,5 @@ export const projectInfo = [
     deployed: "https://rsolov23.github.io/Rachel-s-Workday-Scheduler/",
   },
 ];
+
+export default projectInfo;
