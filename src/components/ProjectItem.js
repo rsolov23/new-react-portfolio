@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import projectImage from "../assets/images/help.png";
+import * as FaIcons from "react-icons/fa";
+import projectInfo from "../assets/data/data";
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
@@ -36,21 +38,33 @@ const ProjectItemStyles = styled.div`
   }
 `;
 
-export default function ProjectItem() {
+export default function ProjectItem({
+  img = projectImage,
+  title = "Project Name",
+  desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  skills = "Skills used",
+  github = "github",
+  deployed = "deployed link",
+}) {
   return (
     <ProjectItemStyles>
       <Link to="/projects" className="projectItem__img">
-        <img src={projectImage} alt="project img" />
+        <img src={img} alt="project img" />
       </Link>
       <div className="projectItem__info">
         <Link to="#">
-          <h3 className="projectItem__title">project 1</h3>
+          <h3 className="projectItem__title">{title}</h3>
         </Link>
-        <p className="projectItem__desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
-          magni molestiae labore placeat maxime delectus earum eos quidem natus
-          at, quaerat omnis ipsa? Sunt accusamus molestias repellat culpa a
-          voluptates?
+        <p className="projectItem__desc">{desc}</p>
+        <p className="projectItem__skills">{skills}</p>
+        <p>
+          <a href={github} target="blank" className="projectItem__github">
+            {" "}
+            <FaIcons.FaGithubSquare size={50} color="#000" />
+          </a>
+          <a href={deployed} className="projectItem__deployed" target="blank">
+            <FaIcons.FaExternalLinkSquareAlt size={50} color="#000" />
+          </a>
         </p>
       </div>
     </ProjectItemStyles>
