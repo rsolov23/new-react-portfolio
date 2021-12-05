@@ -12,24 +12,25 @@ const ProjectItemStyles = styled.div`
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-    border: 3px solid var(--gray-2);
+    border: 3px solid rgb(238, 240, 242);
     img {
-      height: 100%;
+      height: 75%;
     }
   }
   .projectItem__info {
-    margin-top: 1rem;
-    background-color: var(--deep-dark);
-    padding: 1rem;
+    /* margin-top: 1rem; */
+    background-color: rgb(238, 240, 242);
+    /* padding: 1rem; */
     border-radius: 12px;
+   
   }
   .projectItem__title {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   .projectItem__desc {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-family: "RobotoMono Regular";
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -50,23 +51,25 @@ export default function ProjectItem({
     <ProjectItemStyles>
       <Link to="/projects" className="projectItem__img">
         <img src={img} alt="project img" />
+          <div className="projectItem__info">
+            <h3 className="projectItem__title">{title}</h3>
+            <p className="projectItem__desc">{desc}</p>
+            <p className="projectItem__skills">{skills}</p>
+            <p>
+              <a href={github} target="blank" className="projectItem__github">
+                {" "}
+                <FaIcons.FaGithubSquare size={50} color="#000" />
+              </a>
+              <a
+                href={deployed}
+                className="projectItem__deployed"
+                target="blank"
+              >
+                <FaIcons.FaExternalLinkSquareAlt size={50} color="#000" />
+              </a>
+            </p>
+          </div>
       </Link>
-      <div className="projectItem__info">
-        <Link to="#">
-          <h3 className="projectItem__title">{title}</h3>
-        </Link>
-        <p className="projectItem__desc">{desc}</p>
-        <p className="projectItem__skills">{skills}</p>
-        <p>
-          <a href={github} target="blank" className="projectItem__github">
-            {" "}
-            <FaIcons.FaGithubSquare size={50} color="#000" />
-          </a>
-          <a href={deployed} className="projectItem__deployed" target="blank">
-            <FaIcons.FaExternalLinkSquareAlt size={50} color="#000" />
-          </a>
-        </p>
-      </div>
     </ProjectItemStyles>
   );
 }

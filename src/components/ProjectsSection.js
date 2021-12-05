@@ -10,15 +10,17 @@ import "swiper/swiper-bundle.min.css";
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
-  padding: 10rem 0;
+  padding: 5rem 0;
+
   .projects__allItems {
     display: flex;
     gap: 3rem;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
   }
   .swiper-container {
-    padding-top: 8rem;
-    max-width: 100%;
+    padding-top: 4rem;
+    max-width: 75%;
+  
   }
   .swiper-button-prev,
   .swiper-button-next {
@@ -27,7 +29,7 @@ const ProjectSectionStyle = styled.div`
     width: 50px;
     /* background: #000; */
     z-index: 10;
-    right: 60px;
+    right: 40px;
     left: auto;
     top: 0;
     transform: translateY(50%);
@@ -59,7 +61,7 @@ export default function ProjectsSection() {
   return (
     <ProjectSectionStyle>
       <div className="container">
-        <SectionTitle heading="Projects" subheading="some of my recent work" />
+        <SectionTitle heading="Projects" />
         <div className="projects__allItems">
           <Swiper
             spaceBetween={30}
