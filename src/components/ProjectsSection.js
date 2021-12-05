@@ -18,7 +18,7 @@ const ProjectSectionStyle = styled.div`
     /* margin-top: 5rem; */
   }
   .swiper-container {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     max-width: 75%;
   
   }
@@ -29,9 +29,9 @@ const ProjectSectionStyle = styled.div`
     width: 50px;
     /* background: #000; */
     z-index: 10;
-    right: 40px;
+    /* right: 40px;
     left: auto;
-    top: 0;
+    top: 0; */
     transform: translateY(50%);
     /* color: var(--gray-1); */
     border-radius: 8px;
