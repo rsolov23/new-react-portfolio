@@ -6,18 +6,22 @@ import ProjectsSection from "./components/ProjectsSection";
 import Skills from "./pages/Skills";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+
 function App() {
   return (
-    <>
-      <Router>
+    <Router>
+      <div className="App">
+        \
         <Header />
-        <Projects />
-        <ProjectsSection />
+        {/* <Route exact path="/" component={Header} /> */}
+        {/* <Projects />
+          <ProjectsSection /> */}
         <Skills />
-        <Resume />
-        <Contact />
-      </Router>
-    </>
+        {/* <Resume />
+          <Contact /> */}
+        {/* <Footer /> */}
+      </div>
+    </Router>
   );
 }
 
