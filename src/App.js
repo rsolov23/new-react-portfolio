@@ -7,10 +7,12 @@ import Skills from "./pages/Skills";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 
+
 function App() {
   return (
     <Router>
-      <div className="App">
+     
+      <div className="App" >
         \
         <Header />
         {/* <Route exact path="/" component={Header} /> */}

@@ -1,5 +1,5 @@
 import React from "react";
-import Github from "./Github";
+import Github from "../components/Github";
 import { SkillsStyle } from "../styles/SkillsStyle";
 import { FaHtml5, FaReact, FaNode, FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
@@ -38,7 +38,6 @@ function Skills() {
         </div>
       </SkillsStyle>
       <SkillsStyle>
-        <h1>Days I Code</h1>
         <Github />
       </SkillsStyle>
     </>
