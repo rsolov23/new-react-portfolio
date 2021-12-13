@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionTitleStyle } from "../styles/ProjectsStyles";
+import { SectionTitleStyle } from "../../styles/ProjectsStyles";
 
 export default function SectionTitle({ heading = "need heading" }) {
   return (

@@ -10,6 +10,7 @@ body {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 1.15em;
     margin:0;
+    background-color: #000;
 }
 
 

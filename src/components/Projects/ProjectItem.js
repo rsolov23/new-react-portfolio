@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import projectImage from "../assets/images/help.png";
+import projectImage from "../../assets/images/help.png";
 import * as FaIcons from "react-icons/fa";
-import { ProjectItemStyles } from "../styles/ProjectsStyles";
+import { ProjectItemStyles } from "../../styles/ProjectsStyles";
 
 export default function ProjectItem({
   img = projectImage,

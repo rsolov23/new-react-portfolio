@@ -1,7 +1,7 @@
 import React from "react";
-import Github from "../components/Github";
-import { SkillsStyle } from "../styles/SkillsStyle";
-import { IconStyle } from "../styles/IconStyle";
+import Github from "../Skills/Github";
+import { SkillsStyle } from "../../styles/SkillsStyle";
+import { IconStyle } from "../../styles/IconStyle";
 import { FaHtml5, FaReact, FaNode, FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { GrGraphQl } from "react-icons/gr";
@@ -13,9 +13,11 @@ import {
 } from "react-icons/si";
 import { DiGit } from "react-icons/di";
 import { FiGithub } from "react-icons/fi";
+// import Particle from "./Particle";
 function Skills() {
   return (
     <>
+      {/* <Particle /> */}
       <SkillsStyle>
         <h1>Professional Skillset</h1>
         <IconStyle>

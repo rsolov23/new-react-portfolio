@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav, Hamburger, Menu, MenuLink } from "../styles/Nav";
+import { Nav, Hamburger, Menu, MenuLink } from "../../styles/Nav";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);

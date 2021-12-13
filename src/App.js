@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { GlobalStyles } from "./styles/Global";
-import NavBar from "./components/Nav";
-import Header from "./components/Header";
-import ProjectsSection from "./components/ProjectsSection";
-import Skills from "./pages/Skills";
-import Resume from "./pages/Resume";
+import NavBar from "./components/Nav/Nav";
+import Header from "./components/Header/Header";
+import ProjectsSection from "./components/Projects/ProjectsSection";
+import Skills from "./components/Skills/Skills";
+import Resume from "./components/Resume/Resume";
 import Contact from "./pages/Contact";
 import Preloader from "../src/pages/Pre";
 
