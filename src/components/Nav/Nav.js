@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { Nav, Hamburger, Menu, MenuLink } from "../../styles/Nav";
+import { AiOutlineProject } from "react-icons/ai";
+import { FiPaperclip } from "react-icons/fi";
+import { VscPerson } from "react-icons/vsc";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <a href="/">&lt;RS/&gt;</a>
+      <a href="/" className="hover-underline-animation">
+        &lt;RS/&gt;
+      </a>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
@@ -13,9 +18,18 @@ export default function NavBar() {
       </Hamburger>
       <Menu isOpen={isOpen}>
         <div>
-          <MenuLink href="/projects">Projects</MenuLink>
-          <MenuLink href="/skills">Skills</MenuLink>
-          <MenuLink href="/resume">Resume</MenuLink>
+          <MenuLink href="/skills" className="hover-underline-animation">
+            <VscPerson />
+            About
+          </MenuLink>
+          <MenuLink href="/projects" className="hover-underline-animation">
+            <AiOutlineProject />
+            Projects
+          </MenuLink>
+          <MenuLink href="/resume" className="hover-underline-animation">
+            <FiPaperclip />
+            Resume
+          </MenuLink>
         </div>
       </Menu>
     </Nav>

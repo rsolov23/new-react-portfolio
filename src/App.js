@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import ProjectsSection from "./components/Projects/ProjectsSection";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume/Resume";
+import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact";
 import Preloader from "../src/pages/Pre";
 
@@ -30,8 +31,8 @@ function App() {
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/contact" component={Contact} />
-          {/* <Footer /> */}
         </div>
+        <Footer />
       </div>
     </Router>
   );
