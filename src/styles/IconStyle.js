@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const IconStyle = styled.div`
-  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 25px 25px;
   .icons {
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
-    justify-content: center;
-    font-size: 4.5em;
-    margin: 15px;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3em;
+    margin-right: 15px;
+    padding: 20px;
     opacity: 0.93;
     border: 1.7px solid rgba(200, 137, 230, 0.637);
-    /* vertical-align: middle; */
-
     border-radius: 5px;
-
     box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
     overflow: hidden;
     transition: all 0.4s ease 0s;

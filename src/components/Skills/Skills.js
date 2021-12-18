@@ -1,18 +1,9 @@
 import React from "react";
 import Github from "../Skills/Github";
+import Tools from "./Tools";
 import { SkillsStyle } from "../../styles/SkillsStyle";
 import { IconStyle } from "../../styles/IconStyle";
-import { FaHtml5, FaReact, FaNode, FaCss3 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { GrGraphQl } from "react-icons/gr";
-import {
-  SiMongodb,
-  SiVisualstudiocode,
-  SiHeroku,
-  SiLighthouse,
-} from "react-icons/si";
-import { DiGit } from "react-icons/di";
-import { FiGithub } from "react-icons/fi";
+
 // import Particle from "./Particle";
 function Skills() {
   return (
@@ -21,32 +12,37 @@ function Skills() {
       <SkillsStyle>
         <h1>Professional Skillset</h1>
         <IconStyle>
-          <FaReact className="icons" />
-
-          <FaHtml5 className="icons" />
-
-          <FaCss3 className="icons" />
-
-          <IoLogoJavascript className="icons" />
-
-          <GrGraphQl className="icons" />
-
-          <FaNode className="icons" />
-
-          <SiMongodb className="icons" />
-
-          <DiGit className="icons" />
+          <i className="devicon-bash-plain icons"></i>
+          <i className="devicon-bootstrap-plain-wordmark icons"></i>
+          <i className="devicon-css3-plain-wordmark icons"></i>
+          <i className="devicon-express-original-wordmark icons"></i>
+          <i className="devicon-google-plain-wordmark icons"></i>
+          <i className="devicon-graphql-plain-wordmark icons"></i>
+          <i className="devicon-handlebars-plain-wordmark icons"></i>
+          <i className="devicon-heroku-line-wordmark icons"></i>
         </IconStyle>
-      </SkillsStyle>
-      <SkillsStyle>
-        <h1>Tools I Use</h1>
         <IconStyle>
-          <SiVisualstudiocode className="icons" />
-          <SiHeroku className="icons" />
-          <FiGithub className="icons" />
-          <SiLighthouse className="icons" />
+          <i className="devicon-graphql-plain-wordmark icons"></i>
+          <i className="devicon-handlebars-plain-wordmark icons"></i>
+          <i className="devicon-html5-plain-wordmark icons"></i>
+          <i className="devicon-javascript-plain icons"></i>
+          <i className="devicon-jest-plain icons"></i>
+          <i className="devicon-jquery-plain-wordmark icons"></i>
+          <i className="devicon-markdown-original icons"></i>
+          <i className="devicon-mysql-plain-wordmark icons"></i>
+        </IconStyle>
+        <IconStyle>
+          <i className="devicon-html5-plain-wordmark icons"></i>
+          <i className="devicon-javascript-plain icons"></i>
+          <i className="devicon-mongodb-plain-wordmark icons"></i>
+          <i className="devicon-nodejs-plain-wordmark icons"></i>
+          <i className="devicon-npm-original-wordmark icons"></i>
+          <i className="devicon-react-original-wordmark icons"></i>
+          <i className="devicon-sass-original icons"></i>
+          <i className="devicon-webpack-plain-wordmark icons"></i>
         </IconStyle>
       </SkillsStyle>
+      <Tools />
       <SkillsStyle>
         <Github />
       </SkillsStyle>
