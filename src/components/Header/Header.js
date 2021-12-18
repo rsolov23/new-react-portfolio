@@ -6,7 +6,8 @@ export default function Header() {
   return (
     <HeaderStyles>
       {/* <Particle /> */}
-      <h1>Hello World! 👋</h1>
+      <h1>Hello World!</h1>
+      <div className="hand">👋</div>
       <h2>I'm Rachel Solov</h2>
       <img src={image} alt="" />
     </HeaderStyles>

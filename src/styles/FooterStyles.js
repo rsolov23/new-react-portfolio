@@ -5,18 +5,21 @@ export const FooterStyle = styled.div`
   padding: 100px 0 60px;
 
   p {
-    text-align: center;
+    text-align: left;
+    float: left;
   }
   a {
     border: 1px solid #fff;
     border-radius: 50%;
     color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+
     margin-right: 10px;
     height: 40px;
     width: 40px;
     text-decoration: none;
+  }
+  .icons {
+    text-align: right;
+    float: right;
   }
 `;

@@ -8,25 +8,26 @@ export default function Footer() {
   let year = date.getFullYear();
   return (
     <FooterStyle>
-        <div>
-      <p>Designed and Developed by Rachel Solov</p>
-      <p>Copyright © {year} RS </p>
+      <div>
+        <p>Designed and Developed by Rachel Solov</p>
+        <p>Copyright © {year} RS </p>
       </div>
-      
-      <a href="https://github.com/rsolov23" target="blank">
-        {" "}
-        <SiGithub />
-      </a>
+      <div className="icons">
+        <a href="https://github.com/rsolov23" target="blank">
+          {" "}
+          <SiGithub />
+        </a>
 
-      <a
-        href="https://www.linkedin.com/in/rachel-solov-80bb3a174"
-        target="blank"
-      >
-        <SiLinkedin />
-      </a>
-      <a href="mailto:rachelswebdev@gmail.com" target="blank">
-        <AiOutlineMail />
-      </a>
+        <a
+          href="https://www.linkedin.com/in/rachel-solov-80bb3a174"
+          target="blank"
+        >
+          <SiLinkedin />
+        </a>
+        <a href="mailto:rachelswebdev@gmail.com" target="blank">
+          <AiOutlineMail />
+        </a>
+      </div>
     </FooterStyle>
   );
 }

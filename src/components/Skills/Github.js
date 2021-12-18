@@ -1,11 +1,11 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
-
+import { GithubStyle } from "../../styles/GithubStyles";
 
 function Github() {
   const colourTheme = {
     background: "transparent",
-    text: "#ffffff",
+    text: "#000",
     grade4: "#8400b8",
     grade3: "#b22ff4",
     grade2: "#b265f6",
@@ -13,18 +13,21 @@ function Github() {
     grade0: "#ecd9fc",
   };
   return (
-    <div>
+    <>
       <h1>
         Days I <strong>Code</strong>
       </h1>
-      <GitHubCalendar
-        username="rsolov23"
-        blockSize={15}
-        blockMargin={5}
-        theme={colourTheme}
-        fontSize={16}
-      />
-    </div>
+      <h3> </h3>
+      <GithubStyle>
+        <GitHubCalendar
+          username="rsolov23"
+          blockSize={15}
+          blockMargin={5}
+          theme={colourTheme}
+          fontSize={16}
+        />
+      </GithubStyle>
+    </>
   );
 }
 

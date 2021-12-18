@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { GlobalStyles } from "./styles/Global";
 import NavBar from "./components/Nav/Nav";
 import Header from "./components/Header/Header";
@@ -25,13 +25,14 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <GlobalStyles />
         <NavBar />
-        <Header exact path="/" component={Header} />
-        <div>
+
+        <Switch>
+          <Header exact path="/" component={Header} />
           <Route exact path="/projects" component={ProjectsSection} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/contact" component={Contact} />
-        </div>
+        </Switch>
         <Footer />
       </div>
     </Router>
