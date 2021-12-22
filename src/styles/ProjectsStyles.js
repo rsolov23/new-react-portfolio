@@ -32,6 +32,10 @@ export const ProjectSectionStyle = styled.div`
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 2rem;
+    background-color: rgb(247, 249, 247);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding: 16px;
   }
   @media only screen and (max-width: 768px) {
     .projects__allItems {
