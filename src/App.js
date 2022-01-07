@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { GlobalStyles } from "./styles/Global";
 import NavBar from "./components/Nav/Nav";
 import Header from "./components/Header/Header";
-import ProjectsSection from "./components/Projects/ProjectsSection";
+import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume/Resume";
 import Footer from "./components/Footer/Footer";
@@ -28,7 +28,7 @@ function App() {
 
         <Switch>
           <Header exact path="/" component={Header} />
-          <Route exact path="/projects" component={ProjectsSection} />
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/contact" component={Contact} />

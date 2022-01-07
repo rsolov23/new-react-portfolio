@@ -3,14 +3,12 @@ import jotIt from "../images/jotit.png";
 import weather from "../images/weather.png";
 import game from "../images/game.png";
 import budget from "../images/budget.png";
-import social from "../images/socialapi.png";
+import socialapi from "../images/socialapi.png";
 import readme from "../images/readme.png";
 import work from "../images/work.png";
 
-const projectInfo = [
+export const data = [
   {
-    projectInfo: "",
-
     title: "Helping Hands",
     img: help,
     skills: "React/MongoDb/GraphQL",
@@ -18,10 +16,7 @@ const projectInfo = [
     github: "https://github.com/r0yster/helping-hands",
     deployed: "https://helping-hands-deux.herokuapp.com/",
   },
-
   {
-    projectInfo: "",
-
     title: "Jot It",
     img: jotIt,
     skills: "Handlebars/Express/Mysql2",
@@ -30,8 +25,6 @@ const projectInfo = [
     deployed: "https://jotitgood.herokuapp.com/",
   },
   {
-    projectInfo: "",
-
     title: "Gaminator",
     img: game,
     skills: "JavaScript/Server-Side API",
@@ -40,8 +33,6 @@ const projectInfo = [
     deployed: "https://lexcraw4d.github.io/Gaminator/",
   },
   {
-    projectInfo: "",
-
     title: "Weather Dashboard",
     img: weather,
     skills: "HTML/CSS/Server-Side API",
@@ -50,8 +41,6 @@ const projectInfo = [
     deployed: "https://rsolov23.github.io/Rachel-s-Weather-Dashboard/",
   },
   {
-    projectInfo: "",
-
     title: "Budget Tracker",
     img: budget,
     skills: "Mongoose/IndexedDB",
@@ -60,10 +49,8 @@ const projectInfo = [
     deployed: "https://vast-tundra-00537.herokuapp.com/",
   },
   {
-    projectInfo: "",
-
     title: "Social Network API",
-    img: social,
+    img: socialapi,
     skills: "NoSQL/MongoDB",
     summary: "Backend for social network",
     github: "https://github.com/rsolov23/Rachel-s-Social-Network-API",
@@ -71,8 +58,6 @@ const projectInfo = [
       "https://drive.google.com/file/d/1-VtIBn1Yk43UaccVVerqYpSW9f2crDR1/view",
   },
   {
-    projectInfo: "",
-
     title: "README Generator",
     img: readme,
     skills: "Inquirer/Node.js",
@@ -83,8 +68,6 @@ const projectInfo = [
       "https://drive.google.com/file/d/19fMHNmmm4aqq4fI0AQmLApEhf7OuMRjx/view",
   },
   {
-    projectInfo: "",
-
     title: "Workday Scheduler",
     img: work,
     skills: "Moment.js",
@@ -93,5 +76,3 @@ const projectInfo = [
     deployed: "https://rsolov23.github.io/Rachel-s-Workday-Scheduler/",
   },
 ];
-
-export default projectInfo;
