@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Card from "./Card"
+import Card from "./Card";
 import Paginator from "./Paginator";
 import { data } from "../../assets/data/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +7,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-// import "./App.css";
+import { ProjectStyle } from "../../styles/ProjectStyles";
 
 function Projects() {
   const [index, setIndex] = useState(0);
@@ -110,7 +110,7 @@ function Projects() {
   };
 
   return (
-    <div className="App">
+    <ProjectStyle>
       <div className="container">
         <div className="card-container">
           <Paginator
@@ -143,7 +143,7 @@ function Projects() {
           })}
         </div>
       </div>
-    </div>
+    </ProjectStyle>
   );
 }
 
