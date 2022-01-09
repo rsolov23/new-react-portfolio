@@ -28,7 +28,7 @@ export const ProjectStyle = styled.div`
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    color: #0087ca;
+    color: var(--main-color);
   }
 
   .card-container svg:hover {
@@ -48,7 +48,8 @@ export const ProjectStyle = styled.div`
     height: 25rem;
     width: 15rem;
     margin: 1rem;
-    background-color: #0087ca;
+    color:#15265c;
+    background-color: var(--main-color);
     border-radius: 1rem;
     text-align: center;
     text-transform: capitalize;
@@ -102,6 +103,7 @@ export const ProjectStyle = styled.div`
 
   /* Paginator styles */
   .paginator {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,14 +120,14 @@ export const ProjectStyle = styled.div`
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #0087ca;
+    background-color: var(--main-color);
   }
 
   .dot {
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-color: #0087ca;
+    background-color:  var(--main-color);;
     z-index: 1;
     transition: all 1s;
   }

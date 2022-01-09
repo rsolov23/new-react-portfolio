@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing:border-box;
 }
 body {
+  color: var(--main-color);
     font-family: 'Merriweather Sans', sans-serif;
   
     

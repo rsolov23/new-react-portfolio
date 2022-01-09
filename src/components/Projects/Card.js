@@ -27,11 +27,11 @@ const Card = ({
           <ButtonStyle>
             <button>
               <span>
-                <i className="fa fa-github btn">Github</i>
+                <i className="fa fa-github btn">View Code</i>
               </span>
             </button>
             <button>
-              <i className="fas fa-external-link-square-alt">Deployed</i>
+              <i className="fas fa-external-link-square-alt">View App</i>
             </button>
             {/* <a href={github} target="blank" className="github"> */}
             {/* <FaIcons.FaGithubSquare size={50} color="#000" /> */}

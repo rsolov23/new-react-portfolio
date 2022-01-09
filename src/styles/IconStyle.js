@@ -4,6 +4,7 @@ export const IconStyle = styled.div`
   justify-content: space-between;
   display: flex;
   margin: 25px 25px;
+ 
   .test {
     border: 1px solid var(--main-color);
     border-radius: 15px;
