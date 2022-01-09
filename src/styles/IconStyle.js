@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 export const IconStyle = styled.div`
-  justify-content: center;
-  
+  justify-content: space-between;
   display: flex;
   margin: 25px 25px;
+  .test {
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 18px var(--main-color);
+  }
   .icons {
     background-color: rgb(54, 69, 79);
     /* align-items: center; */

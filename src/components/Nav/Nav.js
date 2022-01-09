@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav, Hamburger, Menu, MenuLink } from "../../styles/Nav";
+import { Nav, Hamburger, Menu, MenuLink, LogoStyle } from "../../styles/Nav";
 import { AiOutlineProject } from "react-icons/ai";
 import { FiPaperclip } from "react-icons/fi";
 import { VscPerson } from "react-icons/vsc";
@@ -8,9 +8,11 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <a href="/" className="hover-underline-animation">
-        &lt;RS/&gt;
-      </a>
+      <LogoStyle>
+        <a href="/" className="hover-underline-animation">
+          &lt;Rachel Solov /&gt;
+        </a>
+      </LogoStyle>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />

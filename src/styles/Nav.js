@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const LogoStyle = styled.div`
+  @import url("http://fonts.cdnfonts.com/css/agustina");
+  font-family: "Agustina", sans-serif;
+`
 export const Nav = styled.nav`
   padding: 0 2rem;
   display: flex;
@@ -11,7 +15,7 @@ export const Nav = styled.nav`
   left: 0;
   right: 0;
   a {
-    color: rgb(247, 249, 247);
+    color: var(--main-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 2rem;
@@ -20,7 +24,7 @@ export const Nav = styled.nav`
   .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: #0087ca;
+    color: var(--main-color);
     cursor: pointer;
   }
   .hover-underline-animation::after {
@@ -100,7 +104,7 @@ export const MenuLink = styled.a`
   .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: #0087ca;
+    color: var(--main-b-color);
     cursor: pointer;
   }
   .hover-underline-animation::after {
@@ -111,7 +115,7 @@ export const MenuLink = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0087ca;
+    background-color: var(--main-b-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -120,6 +124,6 @@ export const MenuLink = styled.a`
     transform-origin: bottom left;
   }
   &:hover {
-    color: #7b7fda;
+    color: var(--main-b-color);
   }
 `;
