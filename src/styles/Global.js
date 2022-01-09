@@ -8,11 +8,14 @@ export const GlobalStyles = createGlobalStyle`
 }
 body {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.15em;
-    background-color: #000;
+  
     
 }
+html, body, #root, .App {
+  height: 100%;
+  /* background-color: #232741; */
 
+}
 
 `;
 export default GlobalStyles;

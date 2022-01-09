@@ -2,6 +2,7 @@ import React from "react";
 import { HeaderStyles } from "../../styles/HeaderStyles";
 // import Particle from "../../pages/Particle";
 import image from "../../assets/images/fdev.svg";
+
 export default function Header() {
   var Text = function (el, toRotate, period) {
     this.toRotate = toRotate;
@@ -58,7 +59,7 @@ export default function Header() {
   };
   return (
     <HeaderStyles>
-      {/* <Particle /> */}
+
       <h1>Hello World!</h1>
       <span className="wave" role="img" aria-labelledby="wave">
         👋🏻

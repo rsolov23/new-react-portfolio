@@ -9,7 +9,7 @@ import Resume from "./components/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact";
 import Preloader from "../src/pages/Pre";
-
+import ParticleBackground from "./pages/Particle"
 function App() {
   const [load, updateLoad] = useState(true);
   useEffect(() => {
@@ -24,6 +24,7 @@ function App() {
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <GlobalStyles />
+        <ParticleBackground />
         <NavBar />
 
         <Switch>

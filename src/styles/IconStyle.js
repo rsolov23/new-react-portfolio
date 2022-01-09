@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const IconStyle = styled.div`
   justify-content: center;
+  
   display: flex;
   margin: 25px 25px;
   .icons {
+    background-color: rgb(54, 69, 79);
     /* align-items: center; */
     flex-direction: row;
     display: flex;

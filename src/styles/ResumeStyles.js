@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ResumeStyle = styled.div`
-  background-color: rgb(229, 228, 226);
+  /* background-color: rgb(229, 228, 226); */
   margin-top: 75px;
 `;
 
