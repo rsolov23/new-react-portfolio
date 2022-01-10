@@ -6,11 +6,11 @@ function Github() {
   const colourTheme = {
     background: "transparent",
     text: "#000",
-    grade4: "#8400b8",
-    grade3: "#b22ff4",
-    grade2: "#b265f6",
-    grade1: "#c084f5",
-    grade0: "#ecd9fc",
+    grade4: "#15265c",
+    grade3: "#43517C",
+    grade2: "#5B678C",
+    grade1: "#B8BDCE",
+    grade0: "#FFFEFF",
   };
   return (
     <>

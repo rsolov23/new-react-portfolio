@@ -1,14 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
     box-sizing:border-box;
 }
 body {
   color: var(--main-color);
-    font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   
     
 }

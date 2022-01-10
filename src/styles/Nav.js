@@ -17,7 +17,7 @@ export const Nav = styled.nav`
   a {
     color: var(--main-color);
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 2rem;
   }
 
@@ -100,7 +100,7 @@ export const MenuLink = styled.a`
   transition: all 0.3s ease-in;
   font-size: 2rem;
   color: rgb(247, 249, 247);
-  font-weight: bold;
+  /* font-weight: bold; */
   .hover-underline-animation {
     display: inline-block;
     position: relative;

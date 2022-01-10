@@ -1,10 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { bounce } from "react-animations";
 
+const bounceAnimation = keyframes`${bounce}`;
+export const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
 export const IconStyle = styled.div`
   justify-content: space-between;
   display: flex;
   margin: 25px 25px;
- 
+
   .test {
     border: 1px solid var(--main-color);
     border-radius: 15px;
