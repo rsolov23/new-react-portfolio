@@ -5,7 +5,7 @@ import { GithubStyle } from "../../styles/GithubStyles";
 function Github() {
   const colourTheme = {
     background: "transparent",
-    text: "#000",
+    text: "#6b9fed",
     grade4: "#15265c",
     grade3: "#43517C",
     grade2: "#5B678C",

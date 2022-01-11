@@ -1,16 +1,12 @@
 import React from "react";
-import { HeaderStyles } from "../../styles/HeaderStyles";
+import {
+  HeaderStyles,
+  ImageStyle,
+  AboutStyle,
+} from "../../styles/HeaderStyles";
 // import Particle from "../../pages/Particle";
 import image from "../../assets/images/fdev.svg";
-import {
-  Stack,
-  Heading,
-  Image,
-  Flex,
-  Box,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+
 export default function Header() {
   var Text = function (el, toRotate, period) {
     this.toRotate = toRotate;
@@ -67,58 +63,27 @@ export default function Header() {
   };
   return (
     <HeaderStyles>
-    
-      {/* <Flex>
-        <Box w="70px">
-          <Stack spacing={6}>
-            <Heading as="h2" size="xl" pl={125}>
-              Hello World!
-              <span className="wave" role="img" aria-labelledby="wave">
-                👋🏻
-              </span>
-            </Heading>
-            <Heading as="h2" size="xl" pl={125}>
-              I'm Rachel Solov
-            </Heading>
-            <Heading as="h2" size="xl" pl={125}>
-              <div className="animation_text">
-                <span
-                  class="typewrite"
-                  data-period="2000"
-                  data-words='[ " Developer", " Designer", " Creator"]'
-                ></span>{" "}
-              </div>
-            </Heading>
-          </Stack>
-        </Box>
-        <Spacer />
-        <Box w="170px">
-          <Stack>
-            <Image src={image} alt="web-developer" />
-          </Stack>
-        </Box>
-      </Flex> */}
-      {/* <div>
-        <h1>
-          Hello World!{" "}
+      <AboutStyle>
+        <p>
+          Hello World!
           <span className="wave" role="img" aria-labelledby="wave">
-// 👋🏻
+            👋🏻
           </span>
-        </h1>
-      </div>
-      <div>
-        <h1>I'm Rachel Solov</h1>
-      </div>
-      <div class="animation_text">
-        <h1>
+        </p>
+        <p> I'm Rachel Solov</p>
+        <div className="animation_text">
           <span
             class="typewrite"
             data-period="2000"
             data-words='[ " Developer", " Designer", " Creator"]'
           ></span>{" "}
-        </h1>
-      </div>
-      <img src={image} alt="" /> */}
+        </div>
+      </AboutStyle>
+      <ImageStyle>
+        {" "}
+        <img src={image} alt="web-developer" />
+      </ImageStyle>
+
     </HeaderStyles>
   );
 }

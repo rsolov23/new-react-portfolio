@@ -6,9 +6,7 @@ import { Box, Stack, StackDivider } from "@chakra-ui/react";
 import { Copyright } from "./Copyright";
 import { SocialMediaLinks } from "./SocialIcons";
 
-
 export default function Footer() {
-
   return (
     <Box
       as="footer"
@@ -17,9 +15,9 @@ export default function Footer() {
       maxW="7xl"
       py="12"
       px={{ base: "4", md: "8" }}
+   
     >
       <Stack spacing="10" divider={<StackDivider />}>
-      
         <Stack
           direction={{ base: "column-reverse", md: "row" }}
           justifyContent="space-between"

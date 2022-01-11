@@ -42,7 +42,13 @@ function Skills() {
             width="75"
             height="75"
           />
-          <Icon className="test" icon="logos:express" width="75" height="75" />
+          <Icon
+            color="red"
+            className="test express"
+            icon="logos:express"
+            width="75"
+            height="75"
+          />
           <Icon
             className="test"
             icon="flat-color-icons:google"

@@ -9,7 +9,10 @@ export const IconStyle = styled.div`
   justify-content: space-between;
   display: flex;
   margin: 25px 25px;
-
+  .express {
+    color: #ffffff;
+    /* background-color: #ffffff; */
+  }
   .test {
     border: 1px solid var(--main-color);
     border-radius: 15px;
