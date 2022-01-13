@@ -21,16 +21,25 @@ export default function NavBar() {
       <Menu isOpen={isOpen}>
         <div>
           <MenuLink href="/skills" className="hover-underline-animation">
-            <VscPerson />
-            About
+            <div style={{ display: "flex" }}>
+              <VscPerson style={{ paddingRight: "8px" }} />
+              About
+            </div>
           </MenuLink>
+
           <MenuLink href="/projects" className="hover-underline-animation">
-            <AiOutlineProject />
-            Projects
+            <div style={{ display: "flex" }}>
+              {" "}
+              <AiOutlineProject style={{ paddingRight: "8px" }} />
+              Projects
+            </div>
           </MenuLink>
           <MenuLink href="/resume" className="hover-underline-animation">
-            <FiPaperclip />
-            Resume
+            <div style={{ display: "flex" }}>
+              {" "}
+              <FiPaperclip style={{ paddingRight: "8px" }} />
+              Resume
+            </div>
           </MenuLink>
         </div>
       </Menu>

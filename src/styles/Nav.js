@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LogoStyle = styled.div`
   @import url("http://fonts.cdnfonts.com/css/agustina");
   font-family: "Agustina", sans-serif;
-`
+`;
 export const Nav = styled.nav`
   padding: 0 2rem;
   display: flex;
@@ -35,7 +35,7 @@ export const Nav = styled.nav`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0087ca;
+    background-color:  var(--main-b-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
