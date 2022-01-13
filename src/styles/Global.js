@@ -15,7 +15,7 @@ body {
 html, body, #root, .App {
   height: 100%;
   /* background-color: #232741; */
-  --main-color: #6b9fed;
+  --main-color:   #6b7cb7;
   --main-b-color:#24f9f9;
   --main-g-color:#a1a7c8;
   --main-w-color:#ffffff;

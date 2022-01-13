@@ -6,7 +6,7 @@ export const HeaderStyles = styled.div`
   justify-content: center;
   /* border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
-  margin: 100px 0;
+  /* margin: 100px 0; */
   padding: 60px;
 
   .wave {
@@ -62,4 +62,7 @@ export const ImageStyle = styled.div`
 
 export const AboutStyle = styled.div`
   font-size: 35px;
+  height 500px;
+ width:500px;
+margin-top:40px;
 `;
