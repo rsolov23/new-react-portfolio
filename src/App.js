@@ -5,16 +5,17 @@ import NavBar from "./components/Nav/Nav";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-import Resume from "./components/Resume/Resume"
+import Resume from "./components/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact";
 import Preloader from "../src/pages/Pre";
-import ParticleBackground from "./pages/Particle"
+import ParticleBackground from "./pages/Particle";
 function App() {
-  const [load, updateLoad] = useState(true);
+  const [load, upadateLoad] = useState(true);
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      updateLoad(false);
+      upadateLoad(false);
     }, 1200);
 
     return () => clearTimeout(timer);

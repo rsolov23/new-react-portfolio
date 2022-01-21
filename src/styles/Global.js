@@ -39,5 +39,10 @@ html, body, #root, .App {
 #preloader-none {
   opacity: 0;
 }
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 `;
 export default GlobalStyles;
