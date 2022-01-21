@@ -11,7 +11,7 @@ import Contact from "./pages/Contact";
 import Preloader from "../src/pages/Pre";
 import ParticleBackground from "./pages/Particle";
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, updateLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
